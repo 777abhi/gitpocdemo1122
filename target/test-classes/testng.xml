@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Demo Suite" verbose='1'>
+<listeners>
+<listener class-name="com.project.automationDemoProject.Listeners" />
+</listeners>
+  <test name="UI API Test" preserve-order="true" thread-count="10" parallel="none">
+    <classes>
+     <class name="com.project.automationDemoProject.TC_01_Amazon_ItemTest"/>
+      <class name="com.project.automationDemoProject.TC_02_GetRequestTest"/>
+      <class name="com.project.automationDemoProject.TC_03_POSTRequestTest"/>
+      <class name="com.project.automationDemoProject.TC_04_PUTRequestTest"/>
+      <class name="com.project.automationDemoProject.TC_05_DELETERequestTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
